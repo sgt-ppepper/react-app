@@ -1,0 +1,505 @@
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+/* Стилі для головного блоку */
+.hero {
+  background-image: url(./images/cinema2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px #000;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding: 0;
+  text-shadow: 1px 1px #000;
+}
+
+.btn {
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #c00;
+  cursor: pointer;
+}
+
+/* Стилі для списку фільмів */
+.movies {
+  margin: 50px 0;
+}
+
+.movies h2 {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.movies ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movies li {
+  width: 30%;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px #888;
+  transition: box-shadow 0.2s ease;
+}
+
+.movies li:hover {
+  box-shadow: 0px 0px 20px #888;
+  cursor: pointer;
+}
+
+.movies li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movies li h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 0;
+}
+
+.movies li p {
+  font-size: 1rem;
+  margin: 10px;
+  padding: 0;
+}
+
+/* Стилі для підвалу */
+footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/cinema2.jpg);
+}
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #4070f4;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #0e4bf1;
+}
+
+form .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
+
+login-body{
+  background-image: url(./images/cinema2.jpg);
+  /* overflow: hidden; */
+}
+::selection{
+  background: rgba(26,188,156,0.3);
+}
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #4070f4;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #4070f4;
+  border: 1px solid #4070f4;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #4070f4;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #4070f4;
+  border: 1px solid #4070f4;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: #4070f4;
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+.account-body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/cinema2.jpg);
+}
+
+.info-box {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+}
+
+.info-box h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.info-box h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+
+.info-box lil {
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.tickets-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/cinema2.jpg);
+}
+
+form {
+  padding-top: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets-form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets-form-group label {
+  margin-bottom: 5px;
+}
+
+.tickets-form-group input,
+.tickets-form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tickets-form-group input[type="number"] {
+  width: 70px;
+}
+
+.tickets-form-group button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tickets-form-group button:hover {
+  background-color: #555;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.films-main {
+  background-image: url(./images/cinema2.jpg);
+}
+/* Стилі для блоку з фільмами */
+.films-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+  /* background-color: white; */
+}
+
+.film {
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+.film img:hover {
+  box-shadow: 0px 0px 20px #888;
+  cursor: pointer;
+}
+
+.film img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.film h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.film p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.film a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.film a:hover {
+  background-color: #555;
+}
